@@ -36,3 +36,22 @@
     transform: rotate(360deg);
   }
 }
+
+.complete {
+  text-decoration: line-through;
+  opacity: 0.4;
+  text-decoration: yellow;
+}
+
+.todo-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4px auto;
+  color: #fff;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 118, 20, 1) 0%,
+    rgba(255, 84, 17, 1) 100%
+  );
+}
