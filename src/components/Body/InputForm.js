@@ -6,13 +6,16 @@ const InputForm = props => {
 
     const onSubmitHandler = (e) => {
         e.preventDefault();
-        props.userInputHandler({input: userInput});
+        props.userInputHandler({input: userInput, isComplete: false});
+        
     }
 
     return (
         <form onSubmit={onSubmitHandler} >
-            <input type="text" onChange={event => setUserInput(event.target.value)} />
-            <button type="submit" >Add Task</button>
+            <input type="text" onChange={event => {
+                setUserInput(event.target.value);
+            } } />
+            <button className={'button'} type="submit" >Add Task</button>
         </form>
     );
 }

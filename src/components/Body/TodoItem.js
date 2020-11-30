@@ -5,8 +5,8 @@ const TodoItem = props => {
     
 
     return (
-        <div  >
-            <button  >Completed</button>
+        <div className={props.isComplete ? 'yellow' : ''} >
+            <button onClick={props.completeHandler.bind(this, props.id)} >Completed</button>
             {props.input}
             <button onClick={props.deleteHandler.bind(this, props.id)} >Delete</button>
         </div>

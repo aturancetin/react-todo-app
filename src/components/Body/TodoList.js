@@ -20,6 +20,17 @@ const TodoList = props => {
         setTodoItem(prevInput => prevInput.filter(item => inputID !== item.id))
     }
 
+    const completeHandler = inputID => {
+        let updatedState = todoItem.map(item => {
+            if(item.id === inputID) {
+                item.isComplete = !item.isComplete ;
+            }
+            return item;
+        })
+        setTodoItem(updatedState);
+        
+    }
+
    
 
 
@@ -32,7 +43,8 @@ const TodoList = props => {
                         id={item.id} 
                         input={item.input} 
                         deleteHandler={deleteHandler}
-                        
+                        completeHandler={completeHandler}
+                        isComplete={item.isComplete}
                          /> 
             ))}
         </div>
