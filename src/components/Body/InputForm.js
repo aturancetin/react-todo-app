@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import classes from './InputForm.module.css';
 
 const InputForm = props => {
 
@@ -11,8 +12,8 @@ const InputForm = props => {
     }
 
     return (
-        <form onSubmit={onSubmitHandler} >
-            <input type="text" onChange={event => {
+        <form onSubmit={onSubmitHandler} className={classes.InputForm} >
+            <input placeholder="Enter a task..." type="text" onChange={event => {
                 setUserInput(event.target.value);
             } } />
             <button className={'button'} type="submit" >Add Task</button>

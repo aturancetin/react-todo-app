@@ -1,6 +1,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
+body {
+  background-color: #3CAEA3;
+}
 
 .App {
   text-align: center;
@@ -37,17 +40,3 @@
 
 
 
-.yellow {
-  color: yellow;
-  background-color: green;
-}
-
-.button {
-  background-color: #3CAEA3;
-  border: none;
-  border-radius: 3px;
-  padding: .5em .9em;
-  cursor: pointer;
-  color: white;
-  font-family: 'Nunito', sans-serif;
-}

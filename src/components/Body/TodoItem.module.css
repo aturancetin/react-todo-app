@@ -1,0 +1,38 @@
+.TodoItem {
+    display: flex;
+    
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+    margin-top: 1.2em;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    border-bottom: solid #8C7979 1.5px;
+    padding-bottom: .3em;
+   
+}
+
+
+
+.TodoItem button {
+    background-color: inherit;
+    border: none;
+}
+
+
+.CompleteButton {
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    
+}
+
+.DeleteButton {
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+
+

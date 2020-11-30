@@ -1,0 +1,44 @@
+.InputForm {
+    width: 100%;
+    margin: auto;
+    border-bottom: solid #8C7979 3px;
+    
+}
+
+.InputForm input{
+    background-color: #ECEBEB;
+    margin: 3em 1em 2em;
+    width: 65%;
+    padding: .8em .9em;
+    border-radius: 3px;
+    border: none;
+}
+
+.InputForm input::placeholder {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: .9em;
+    color: #706E6E;
+}
+
+.InputForm input:focus {
+    outline-color: #3CAEA3 ;
+}
+
+.InputForm button {
+    width: 20%;
+    background-color: #3CAEA3;
+    border: none;
+    border-radius: 3px;
+    padding: .8em .9em;
+    cursor: pointer;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+}
+
+.InputForm button:hover {
+    background-color: #2E867D;
+    transition: .5s;
+}
+

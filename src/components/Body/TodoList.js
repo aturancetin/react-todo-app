@@ -37,7 +37,7 @@ const TodoList = props => {
     return (
         <div>
             <InputForm userInputHandler={onAddHandler} />
-            <h2>Todos</h2>
+            
             {todoItem.map(item => (
                 <TodoItem key={item.id} 
                         id={item.id} 
