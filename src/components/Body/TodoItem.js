@@ -13,7 +13,10 @@ const TodoItem = props => {
             <button onClick={props.completeHandler.bind(this, props.id)} > 
                 <img alt="complete-button" className={classes.CompleteButton} src={CompleteButton}/>
             </button>
+            <div>
             {props.input}
+            </div>
+            
             <button onClick={props.deleteHandler.bind(this, props.id)} >
                 <img alt="delete-button" className={classes.DeleteButton} src={DeleteButton}/>
             </button>

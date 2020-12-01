@@ -1,10 +1,11 @@
 import React from 'react';
 import Logo from './Logo';
+import classes from './Header.module.css';
 
 const Header = () => {
 
     return (
-        <div>
+        <div className={classes.Header}>
             <Logo />
         </div>
     )
