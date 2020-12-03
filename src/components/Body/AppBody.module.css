@@ -1,5 +1,6 @@
 .AppBody {
-    
+    overflow: hidden;
+    overflow-y: scroll;
     background-color: #173F5F;
     height: 500px;
     width: 70%;

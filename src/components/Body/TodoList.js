@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import TodoItem from './TodoItem';
 import InputForm from './InputForm';
+import classes from './TodoList.module.css';
 
 const TodoList = props => {
 
@@ -35,9 +36,9 @@ const TodoList = props => {
 
 
     return (
-        <div>
+        <div >
             <InputForm userInputHandler={onAddHandler} />
-            
+            <div className={classes.TodoList}>
             {todoItem.map(item => (
                 <TodoItem key={item.id} 
                         id={item.id} 
@@ -47,6 +48,8 @@ const TodoList = props => {
                         isComplete={item.isComplete}
                          /> 
             ))}
+            </div>
+            
         </div>
     );
 }

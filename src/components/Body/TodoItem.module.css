@@ -1,6 +1,6 @@
 .TodoItem {
     display: flex;
-    
+    color: white;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
@@ -11,6 +11,9 @@
     margin-left: auto;
     border-bottom: solid #8C7979 1.5px;
     padding-bottom: .3em;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: .9em;
    
 }
 
