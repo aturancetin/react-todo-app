@@ -4,6 +4,7 @@ import CompleteButton from '../../assets/check-mark.svg';
 import DeleteButton from '../../assets/delete.svg';
 
 
+
 const TodoItem = props => {
 
     
@@ -13,7 +14,7 @@ const TodoItem = props => {
             <button onClick={props.completeHandler.bind(this, props.id)} > 
                 <img alt="complete-button" className={classes.CompleteButton} src={CompleteButton}/>
             </button>
-            <div>
+            <div className={props.isComplete === true ? classes.completed : ""}>
             {props.input}
             </div>
             

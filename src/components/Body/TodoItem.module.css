@@ -39,4 +39,8 @@
     cursor: pointer;
 }
 
+.completed{
+    opacity: .2;
+    text-decoration: line-through solid;
+}
 

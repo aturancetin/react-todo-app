@@ -17,7 +17,6 @@ const TodoList = props => {
     }
 
     const deleteHandler = inputID => {
-        console.log(inputID);
         setTodoItem(prevInput => prevInput.filter(item => inputID !== item.id))
     }
 

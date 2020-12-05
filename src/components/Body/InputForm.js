@@ -9,6 +9,7 @@ const InputForm = props => {
 
     const onSubmitHandler = (e) => {
         e.preventDefault();
+        setUserInput(inputRef.current.value);
         props.userInputHandler({input: userInput, isComplete: false});
         inputRef.current.value = "";
         
